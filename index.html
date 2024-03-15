@@ -1,19 +1,342 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="x-ua-compatible" content="ie=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Page Title</title>
-		<meta name="description" content="something" />
-		<meta name="author" content="me" />
 
-		<link rel="stylesheet" type="text/css" href="/style.css" />
-	</head>
-	<body>
-		<h1>Hello World</h1>
-		<img src="/assets/images/kitten.png" />
-		<script type="text/javascript" src="/index.js"></script>
-	</body>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digitale Kommunikation recap</title>
+    <meta
+      name="description"
+      content="drei interessantesten Themen"
+    />
+    <link rel="shortcut icon" href="https://picocss.com/favicon.ico" />
+
+    <!-- Pico.css (Classless version) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <style>
+     .image-container {
+  display: flex; /* Flexbox verwenden */
+}
+
+.image-container img {
+  width: 150px; /* Breite der Bilder festlegen */
+  height: auto; /* Automatische Anpassung der Höhe beibehalten */
+  margin-right: 10px; /* Abstand zwischen den Bildern */
+}
+h1 {
+    color: #4a7daf; /* Beispiel-Farbe */
+}
+header h1 {
+    font-size: 80px; /* Beispielgröße */
+}
+h4 {
+    color: #ca7979; /* Beispiel-Farbe */
+}
+h2 {
+    font-size: 60px; /* Beispielgröße */
+}
+h2 {
+  color: #030431; /* Beispiel-Farbe */
+}
+</style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <hgroup>
+        <h1>Digitale Kommunikation recap</h1>
+        <p>Was habe ich programmiert? </p>
+      </hgroup>
+      
+    </header>
+    <!-- ./ Header -->
+
+    <!-- Main -->
+    <main>
+      <!-- Preview -->
+   
+
+      <!-- Typography-->
+      <section id="Einführung">
+        <h2>Einführung</h2>
+        <p>
+          Herzlich willkommen! Auf dieser Seite möchte ich meine Reise durch das Programmieren mit euch teilen. Im Rahmen meines Grundlagenfachs in digitaler Kommunikation habe ich nicht nur das Programmieren gelernt, sondern auch das Zusammenspiel zwischen Kunst und Programmieren. Ich werde euch drei Projekte vorstellen, welche ich im Laufe des Semesters in digitaler Kommunikation fertiggestellt habe.
+        </p>
+
+        <!-- Blockquote-->
+      
+
+        <!-- Lists-->
+        <h3>Projekte</h3>
+        <ul>
+          <li>Perspektive</li>
+          <li>little tools</li>
+          <li>Dokumentation des "sleeping uncle"</li>
+          
+        </ul>
+
+        <!-- Inline text elements-->
+      
+             
+
+        
+
+        <!-- Medias-->
+        
+
+      <!-- Accordions-->
+      <section id="accordions">
+        <h2>Meine drei Projekte</h2>
+        <details>
+          <summary>Perspektive</summary>
+          <p> 
+    
+         <h4> Was habe ich gelernt?</h4>
+            Unsere erste praktische Aufgabe, bei welcher wir erstmalig programmieren sollten, war die Aufgabe Perspektiven. Hier sollten wir mit der Programmiersprache Javascript und p5.js, mithilfe von geometrischen Formen die Illusion eines Raumes erschaffen. P5.js ist hier eine Programmiersprache, welche das Programmieren für Anfänger erleichtert.<br>  Da ich zuvor noch nie programmiert habe, war ich etwas überfordert mit der Aufgabe. Dennoch war die Aufgabe wichtig, da ich hier viele Dinge gelernt habe, die später sehr wichtig wurden.<br> Zu Aller erst habe ich den Befehl von <code>function setup ()</code> kennengelernt und den Unterschied zu <code>function draw()</code>. Unseren Raum sollten wir nämlich in <code>function setup ()</code> schreiben. Grund hierfür ist, dass bei <code>function setup ()</code> der Code einmalig ausgeführt wird. Wir wollen nämlich nur einen statischen Raum zeigen und keine Animation. Animationen sollten im function draw geschrieben werden, da diese immer wieder ausgeführt werden. Des Weiteren habe ich in dieser Aufgabe wichtige Regeln gelernt. Ich habe gelernt, dass ein Code immer von oben nach unten ausgeführt wird. Das bedeutet, dass ich, als ich beispielsweise das Rechteck, welches das Ende des Raumes sein sollte, in einer dunkleren Farbe programmiert habe, damit der Raum diese Tiefe bekommt, den Code zum Färben des Rechtecks vor dem Rechteck Befehl geschrieben habe. Hierbei habe ich zwar den Code zum Rechteck  <code>rect(125, 125, 150, 150);</code> zu zuerst programmiert, doch als ich das Rechteck dunkler haben wollte, musste ich den Code zum Färben des Rechtecks vor dem  <code>rect(125, 125, 150, 150);</code> schreiben. Somit wird zuerst die Farbe ausgeführt und dann das Rechteck und dadurch hat das Rechteck dann die gewünschte Farbe. Hätte ich die fill Farbe nach dem Rechteck geschrieben, hätten alle anderen Formen, welche danach kommen, diese gewünschte Farbe. Bedeutet, wenn ich danach keine neue fill Farbe schreibe, bleiben alle die darauffolgenden Befehle in dieser fill Farbe vom ersten Rechteck, da hier der Code von oben nach unten ausgeführt wird.
+       <h4> Wo gab es Probleme?</h4>
+       Nachdem ich die Basics kennengelernt habe, wollte ich mich auf die Gestaltung des Raumes konzentrieren. Dafür habe ich mir die p5.js Reference Bibliothek angeschaut und die Befehle für die Formen gesucht, welche ich brauchte.
+Meine ersten Anfänge waren es, in meiner Canvas die ungefähre Position der Formen zu erraten. Ich habe gewusst, dass meine Canvas 400x400 Pixel ist und anhand dieser Angaben habe ich versucht, auf meinem Bildschirm zu erkennen, wo die richtigen Koordinaten sind.
+Natürlich habe ich dann gemerkt, dass dies viel zu schwer ist und mir das unglaublich viel Zeit gekostet hat.
+        
+     <h4> Die Lösung für mein Problem? </h4>
+    <br> Als ich Probleme hatte, die richtigen Koordinaten herauszufinden, habe ich mich an den Tipp von Fabian erinnert. <br>Wenn etwas digital nicht laufen sollte, sollte man es  Analog ausprobieren<br>
+    Hierfür habe ich ein kariertes Blatt genommen und auf diesem das Koordinatensystem meiner Canvas gezeichnet. Danach musste ich nur noch die Formen zeichnen und die Positionen der Punkte ablesen. Welche Punkte ich genau ablesen musste, und wie die Syntax der Formen aufgebaut ist, habe ich bei der p5.js Reference Bibliothek herausgefunden.
+        
+      </p>
+          
+        </details> 
+        <details open>
+        <summary>Code zu der Perspektiven Aufgabe</summary>
+
+      <p>
+        <pre>
+          <code>
+        function setup() {
+          // setup runs once
+          const canvas = createCanvas(400, 400);
+          canvas.parent("sketch");
+          background(128);
+          fill(70);
+          rect(125, 125, 150, 150);
+          line(0, 0, 125, 125);
+          line(400, 400, 275, 275);
+          line(0, 400, 125, 275);
+          line(400, 0, 275, 125);
+          fill(150);
+          quad(130, 290, 270, 290, 350, 375, 50, 375);
+          ellipseMode(CENTER);
+          strokeWeight(1)
+          line(325, 200, 350, 200);
+          ellipse(337, 200, 70, 150);
+          line(325, 200, 350, 200);
+          fill(200);
+          strokeWeight(1);
+          fill(70)
+          rect(338, 200, 4, 2);
+          ellipseMode(CENTER);
+          fill(80);
+          rect(338, 200, 4, 2);
+          fill(185)
+          ellipse(336, 200, 50, 120);
+          fill(185);
+          strokeWeight(2);
+          square(140, 150, 30);
+          rect(175, 170, 20, 30);
+          ellipseMode(CENTER);
+          ellipse(155, 205, 25, 35);
+          rect(200, 150, 25, 30);
+          ellipseMode(CENTER);
+          ellipse(200, 65, 75, 30);
+          fill(70);
+          strokeWeight(2);
+          ellipseMode(CENTER);
+          ellipse(200, 65, 30, 12);
+          fill(240);
+          noStroke();
+          rect(203, 153, 19, 23);
+          rect(178, 173, 14, 23);
+          square(143, 153, 24);
+          ellipse(200, 68, 20, 4);
+          ellipse(155, 205, 20, 27);
+          strokeWeight(5);
+          fill(150);
+          quad(19, 95, 75, 142, 75, 324, 18, 379);
+          fill(185);
+          quad(25, 110, 70, 147, 70, 329, 25, 374);
+          fill(110);
+          strokeWeight(4);
+          circle(62, 233, 10);
+          fill(245);
+          circle(63, 232, 5);
+        }
+        
+        
+        function draw() {
+          // draw runs all the time
+        }
+        
+        function keyPressed() {
+          if (key === "s") save("perspective-babedini.png");
+        }
+      
+      </code>
+    </pre>
+
+
+
+      </p>
+      <div class="image-container">
+        <img src="assets/sketch (3) (1).png" alt="Bild 1">
+        <img src="assets/sketch (7) (1).png" alt="Bild 2">
+        <img src="assets/sketch (8) (1).png" alt="Bild 3">
+
+
+      </div>
+        
+      
+
+      </details>
+        <details open>
+          <summary>Little tools</summary>
+         <p>
+        
+          Die little Tools Seite, war eine der schwereren Aufgaben in dem Semester, aber auch einer der Aufgaben, wo ich fast am meisten gelernt habe, wenn es um interaktives Programmieren geht.
+          Auf meiner little Tools Seite hatte ich mich dafür entschieden, ein interaktives Mal spiel zu programmieren. Es gibt eine Leinwand auf der gemalt werden kann, die Farbe mit welcher gemalt wird, lässt sich auch ändern, man kann radieren und sein Kunstwerk danach speichern mit dem Speicherbutton.
+        <h4> Was habe ich gelernt?</h4>
+        Während dieser Aufgabe habe ich einige neue Befehle kennengelernt.
+        Ich habe neue <strong>Konstanten und Variablen</strong> kennengelernt, wie der <code>const saveButton= document.querySelector ('button#save');</code> und der <code>const colorInput = document.querySelector ('input#color');</code>. Hier war der Befehl <code>document.querySelector</code> sehr wichtig, da dieser ermöglicht die Buttons auf der Internetseite zu benutzten, da dieser auf den DOM zugreift. Dieser erlmöglicht, dass Javascript, auf welchen ich den Code der Seite geschrieben habe, auf das HTML-Dokument zugreifen kann und dieses verändern kann. So konnte ich programmieren, dass der Nutzer die Farbe interaktiv ändern konnte und diese nicht vom Code vorgegeben wurde.
+        Außerdem habe ich den Umgang mit Funktionen wie   <code>  function mouseDragged()</code> geübt. Hier konnte ich einstellen, wie der Radiergummi funktionieren soll und habe mich dafür entschieden, sobald man die Maus gedrückt hält, dass weiße Farbe das Bild radiert. 
+        Das eigene Bild entsteht dann, wenn etwas wegradiert wird, da auf der Canvas zufällig Kreise gemalt werden und man diese dann aktiv wegradieren kann und sozusagen ein Bild malt. Damit die canvas jedoch nicht das Radierte vom Nutzer immer überschreibt, habe ich gelernt einen <code>framecount</code> im Hinblick auf ein <code>if</code> Befehl und <code>noLoop()</code>Befehl zu nutzen. So konnte ich ein Bild kreieren, welches der Nutzer radieren kann.
+        <h4> Wo gab es Probleme?</h4>
+        Wie ich zu Beginn schon erwähnt habe, fand ich diese Aufgabe fast am schwersten, a es zu Beginn viele Probleme gab. Ein Problem, welches ich lange nicht lösen konnte, war, dass zu Beginn die Kreise auf der Canvas nie aufgehört haben, das radierte vom Nutzer zu überschreiben. So konnte ich meine Idee des  Mal Spiels nicht umsetzten. Ich dachte, das Problem lasse sich lösen, wenn ich den Befehl von <code>noLoop</code> nutze, dann wurde jedoch nichts mehr auf der Leinwand gezeichnet.
+        Das nächste Problem, welches sich rausstellte, war der Radiergummi. Zu Beginn war es die Idee ein Tool zu entwickeln, welches die Kreise auf der Leinwand nur da radiert, wo auch die Maus rüber fuhr. Das habe ich leider garnicht hinbekommen. 
+        <h4> Die Lösung für mein Problem? </h4>
+        Nachdem ich viele Videos von dem Codingtrain geschaut habe und etwas Kreativität genutzt habe, sind mir zu meinen Problemen letztendlich Lösungen eingefallen. Ein Problem war es, dass die Kreise sich auf der Canvas immer wieder überschrieben haben. Hierfür habe ich dann einen framecount angewandt. Der Framecount hat es mir ermöglicht, die Kreise nach einer bestimmten Anzahl zu stoppen und nicht das komplette Zeichnen der Kreise. Den Framecount habe ich dann auf meine gewollte Anzahl eingestellt und zum Schluss ein noLoop Befehl eingesetzt, damit sich die Kreise beim Erreichen von meiner Angabe nicht mehr zeichnen.
+        <br>Mein nächstes Problem war, dass ich meinen gewünschten Radiergummi Tool nicht so umsetzten konnte, wie ich es wollte. <br> Ich habe mich dann dafür entschieden bei meinem Befehl <code>mouseDragged</code> weiße Kreise zu zeichnen. Daraus habe ich gelernt, dass sich oft Dinge, welche man programmieren möchte, oft auch auf andere Weise umsetzen lassen. So radier ich garnicht, sondern male einfach weiß über die anderen Kreise.
+       </p>
+
+        </details>
+        <details open>
+          <summary>Code zu little tools </summary>
+         
+            <pre>
+              <code>
+              <p>
+    
+      const saveButton= document.querySelector ('button#save');
+      const colorInput = document.querySelector ('input#color');
+      console.log(colorInput);
+      let paintColor = 'lightgreen';
+      colorInput.value = paintColor;
+      var spot = {
+          x: 300,
+          y: 400
+      }
+         
+          
+      
+      var color= {paintColor} 
+      
+      function setup () {
+      const canvas =createCanvas (600,700);
+      canvas. parent ('sketch');
+      console.log (saveButton);
+      background (255);
+      saveButton.addEventListener("click",()=>{
+      console.log ('clicked');
+      save('image.png');
+      });
+      colorInput.addEventListener ('input', ()=> {
+      paintColor= colorInput.value;
+      
+      });
+      
+      } 
+        
+      
+          
+        function mouseDragged() { 
+          fill('white'); 
+          noStroke(); 
+          circle(mouseX, mouseY, 20); 
+        } 
+      
+      
+      
+      
+      
+      
+      function draw() 
+      {
+      spot.x =random (0, width);
+      spot.y =random (0, height);
+      ellipse (spot.x, spot.y, 35,35);
+      fill (paintColor);
+      
+      if (frameCount > 3000) { noLoop(); }
+      }
+      
+     function clicked(){
+      
+          save('image.png')
+      }
+      
+      function keyPressed () {
+      if (key === 's') {
+          save ('image.png')
+      }
+      
+      }
+      
+      <a href="https://littletools.netlify.app/">Hier kommt ihr zu meiner little tools Seite :)</a>
+    </code>
+  </pre>
+    </p>
+  </details>
+
+  <details>
+    <summary>Die Dokumentation des "sleeping uncles"</summary>
+    
+    <p> 
+    Bei unserem gemeinsamen Abschlussprojekt haben wir ein interaktives Spiel entwickelt. Meine Gruppe und ich haben uns, um die Website dieses Projektes gekümmert.
+<h4>Was habe ich gelernt?</h4>
+Bei dem Erstellen der Website habe ich pico.css kennengelernt. Pico.css ist ein CSS-Framework, welches die Gestaltung der Website vereinfacht. Durch Pico.css hatten wir schon ein Skelett der Website mit vielen Tools. Wir mussten nur noch das löschen, was wir auf unserer Website nicht brauchten und dann war das Skelett der Website schon fertig.
+Somit habe ich gelernt, wie man auf eine Website erstellt nur mit der Anwendung von der index.html, ohne sich dabei viel mit style.css zu beschäftigen, da es in der index.html dank pico.css schon einen kleinen style Tag besitzt.
+<h4> Wo gab es Probleme?</h4>
+Da wir als Gruppe die Website zusammen erstellt haben, mussten wir jeder auf dem main repository, alle eine eigene index.html erstellen, um dort separat an unseren Aufgaben zu arbeiten. Als wir jedoch an den Punkt kamen, unsere branches zu pushen und in die main index.html zu pullen, ging dies nicht und wir wussten nicht, wie wir unsere Seite letztendlich zusammenfügen können.
+
+<h4>Was habe ich gelernt?</h4>
+Wir konnten mit Githup unsere Website nicht zusammenfügen, also sind das Problem kreativer angegangen. Jeder hat seinen Code von dem Teil der Website an eine Person geschickt und diese hat alle zusammengesetzt in der main index.html. Dieser Umgang mit dem Problem war zwar aufwändiger, jedoch haben wir dennoch eine Lösung gefunden, was mir gezeigt hat, dass es immer mehr als eine Lösungsfindung gibt, wenn man Code schreiben möchte.
+
+<br>(einen sneak-peak zu unserer Seite folgt)<br>
+</p>
+ </details> 
+    
+   
+      </section>
+      
+
+      
+      
+    </main>
+    <!-- ./ Main -->
+
+    <!-- Footer -->
+    <footer>
+      <small
+        >Built with <a href="https://picocss.com">Pico</a> •
+        <a href="https://github.com/picocss/examples/blob/master/v1-classless/index.html"
+          >Source code</a
+        ></small
+      >
+    </footer>
+    <!-- ./ Footer -->
+
+    <!-- Minimal theme switcher -->
+  </body>
 </html>
